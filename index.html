@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توظيف العمال</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>توظيف العمال</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>تسجيل الدخول</h2>
+            <form id="loginForm">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="text" id="phone" name="phone" required>
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+        </section>
+        <section id="register" style="display:none;">
+            <h2>تسجيل الباحث عن العمل</h2>
+            <form id="workerForm">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="skill">المهارة:</label>
+                <input type="text" id="skill" name="skill" required>
+                <label for="photo">تحميل صورة:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <label for="video">تحميل فيديو:</label>
+                <input type="file" id="video" name="video" accept="video/*">
+                <button type="submit">تسجيل</button>
+            </form>
+        </section>
+        <section id="workers">
+            <h2>الباحثون عن عمل</h2>
+            <div id="workerList"></div>
+        </section>
+        <section id="jobs">
+            <h2>الوظائف المتاحة</h2>
+            <div id="jobList"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
